@@ -1,8 +1,6 @@
 import sys
 import urllib2
-import socket
 import os
-import re
 
 def print_and_exit(message, code=-1024):
     def do_print():
@@ -28,6 +26,9 @@ def getenv_or_exit(env):
     return v if v is not None else print_and_exit(write_log('No such param',
                                                             'e'),
                                                   3)
+
+def getenv_or_none(env):
+    return os.getenv(env)
 
 def getenv_or_false(env):
     return os.getenv(env, False)

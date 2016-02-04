@@ -10,7 +10,7 @@ def get_obligatory_params():
     return dict(map(lambda x: (x[0], c.gid_to_uri(x[1])) if x[0] == 'GID' else
                     (x[0], x[1]),
                     zip(get_obligatory_params_names(),
-                        map(lambda x: os.getenv(x),
+                        map(lambda x: c.getenv_or_none(x),
                             get_obligatory_params_names()))))
 
 def check_obligatory_params():
