@@ -10,7 +10,7 @@
 #   GID:    group id of artifact
 #   AID:    artifact id
 # Optional parameters:
-##   RELEASE: if passed, optimal choice won't be checking snapshot builds
+#   RELEASE: if non-empty, optimal choice won't be checking snapshot builds
 #   VERSION: if none passsed, will return latest
 #            if passed X.Y.Z-SNAPSHOT, will return latest for the snapshot
 #            can be exact

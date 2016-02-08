@@ -16,6 +16,7 @@ Obligatory parameters:
 
 Optional parameters:
 
+* RELEASE: if declared, will search basing on X.Y.Z, not X.Y.Z-TIMESTAMP-NUMBER
 * VERSION: if none passsed, will return latest
            if passed X.Y.Z-SNAPSHOT, will return latest for the snapshot
            can be exact
@@ -28,7 +29,6 @@ REPOS=snapshots GID=org.company.project AID=main EXT=war ./nexus-link.py
 
 # TODO
 
-* Search in release
 * Verbose mode
 * Refactoring
 
